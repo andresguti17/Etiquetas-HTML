@@ -31,6 +31,38 @@
         </div>
     </header>
     <div class="cuerpo">
+        
+          <div class="contenido">
+            <div style="margin-left: 40px; margin-right: 40px;">
+                <h2>ETIQUETAS</h2>
+                <hr style="background-color: black; border: none; height: 2px;">
+                <div style="grid-auto-columns: auto;">
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='#'">
+                            <b><p class="lista">Tablas</p></b>
+                        </button>
+                    </li>
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                            <p class="lista">Definicion</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                            <p class="lista">Sintáxis</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                            <p class="lista">Ventajas</p>
+                        </button>
+                    </li>
+
+                </div>
+            </div>
+        </div>
+
+
         <div class="contenido">
             <div style="margin-left: 50px; margin-right: 50px;">
                    <h1>Tablas en HTML</h1>
@@ -45,8 +77,61 @@
                 &lt;td&gt; <span style="color: green;"> // Define cada ccelda de la tabla </span>
                 &lt;tbody&gt; <span style="color: green;"> // Agrupa los cuerpos de cada tabla </span>
             </code></pre>
+
+            <div>
+                <h2>Ejemplo en codgio</h2>
+                <pre><code>
+&lt;table border="1" style="border-collapse: collapse;"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Nombre&lt;/th&gt;
+      &lt;th&gt;Ciudad&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Nicole&lt;/td&gt;
+      &lt;td&gt;Neiva&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>     
             </div>
+            <h3>Ejemplo visualización</h3>
+            <table class="tabla"> 
+                <thead> 
+                    <tr>
+                     <th>Nombre</th>
+                      <th>Ciudad</th>
+                      <th>Edad</th>
+                      <th>estatura</th>
+                     </tr>
+                     </thead> 
+                     <tbody> 
+                        <tr> 
+                            <td>Nicole</td> 
+                            <td>Neiva</td>
+                            <td>18</td>
+                            <td>1,60 cm</td>
+                         </tr> 
+                         <tr>
+                             <td>Belen</td> 
+                            <td>Neiva</td>
+                            <td>11</td>
+                            <td>1,30 cm</td>
+                         </tr>
+                         <tr>
+                             <td>Victoria</td> 
+                            <td>Neiva</td>
+                            <td>1</td>
+                            <td>60 cm</td>
+                         </tr>
+                        </tbody> 
+                    </table>
+
+            </div> 
         </div>
+        
     </div>
 </body>
 </html>
