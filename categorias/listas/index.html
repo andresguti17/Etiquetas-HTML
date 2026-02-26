@@ -32,67 +32,148 @@
     </header>
     <div class="cuerpo">
         <div class="contenido">
-            <div style="margin-left: 40px; margin-right: 40px;">
+            <div style="margin-left: 40px; margin-right: 15px;">
                 <h2>ETIQUETAS</h2>
                 <hr style="background-color: black; border: none; height: 2px;">
                 <div style="grid-auto-columns: auto;">
                     <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='#'">
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#listas'">
                             <b><p class="lista">LISTAS</p></b>
                         </button>
                     </li>
                     <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#ul'">
                             <p class="lista">&lt;ul&gt;</p>
                         </button>
                     </li>
                     <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#ol'">
                             <p class="lista">&lt;ol&gt;</p>
                         </button>
                     </li>
                     <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#li'">
                             <p class="lista">&lt;li&gt;</p>
                         </button>
                     </li>
                     <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#dl'">
                             <p class="lista">&lt;dl&gt;</p>
                         </button>
                     </li>
                     <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#dt'">
                             <p class="lista">&lt;dt&gt;</p>
                         </button>
                     </li>
                     <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#dd'">
                             <p class="lista">&lt;dd&gt;</p>
                         </button>
                     </li>
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#tipos'">
+                            <b><p class="lista">TIPOS DE LISTAS</p></b>
+                        </button>
+                    </li>
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#desordenada'">
+                            <p class="lista">Lista desordenada</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#ordenada'">
+                            <p class="lista">Lista ordenada</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#definicion'">
+                            <p class="lista">Lista de definición</p>
+                        </button>
+                    </li>
+                    <br>
                 </div>
                 
             </div>
         </div>
         <div class="contenido">
             <div style="margin-left: 50px; margin-right: 50px;">
-                <h1>INTRODUCCIÓN A LISTAS EN HTML</h1>
-                <p class="colorw">Las listas de HTML dan la capacidad de poder </p>
-                <h3>Estructura básica de un documento HTML: </h3>
+                <h1 id="listas">INTRODUCCIÓN A LISTAS EN HTML</h1>
+                <p class="colorw">En HTML, una lista es una estructura que permite organizar y mostrar elementos relacionados de forma ordenada o desordenada dentro de una página web.</p>
+                <p class="colorw">Actualmente, en HTML existen 6 etiquetas. Mediante estas 6 etiquetas se pueden mencionar 3 tipos de listas.
+                Primero, mencionaremos todas las etiquetas para después mostrar los tipos de listas que se pueden hacer con estas.</p>
+                <h2 id="ul">&lt;ul&gt;</h2>
+                <p class="colorw">Con esta etiqueta los elementos se muestran desordenados, listándolos con una viñeta a su lado izquierdo.</p>
+                <h2 id="ol">&lt;ol&gt;</h2>
+                <p class="colorw">Con esta etiqueta los elementos se muestran de forma organizada, siendo ennumerados.</p>
+                <h2 id="li">&lt;li&gt;</h2>
+                <p class="colorw">Con esta etiqueta se enlistan los items.</p>
+                <p class="colorw">Mientras se use alguna de las 2 etiquetas mencionadas anteriormente.</p>
+                <h2 id="dl">&lt;dl&gt;</h2>
+                <p class="colorw">Con esta etiqueta se muestra una lista de definición.</p>
+                <h2 id="dt">&lt;dt&gt;</h2>
+                <p class="colorw">Con esta etiqueta se muestra el término o palabra a definir.</p>
+                <h2 id="dd">&lt;dd&gt;</h2>
+                <p class="colorw">Con esta etiqueta se define el término.</p>
+                <h1 id="tipos">TIPOS DE LISTAS</h1>
+                <h2 id="desordenada">Lista desordenada</h2>
+                <p class="colorw">Para conseguir una lista que se muestra de forma desorganizada, debes usar la siguiente combinación de etiquetas:</p>
                 <pre><code>
-    &lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-    &lt; head&gt;
-        &lt;meta charset=<span class="colorRed">"UTF-8" </span>&gt;
-        &lt;meta name= <span class="colorRed">"viewport"</span> content=<span class="colorRed">"width=device-width, initial-scale=1.0"</span>&gt;
-        &lt;title&gt;<span class="colorw">Document</span>&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt; <span class="colorw">Título</span>&lt;/h1&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;
+    &lt;ul&gt;
+        &lt;li&gt;<span class="colorw">Elemento 1</span>&lt;/li&gt;
+        &lt;li&gt;<span class="colorw">Elemento 2</span>&lt;/li&gt;
+        &lt;li&gt;<span class="colorw">Elemento 3</span>&lt;/li&gt;
+    &lt;/ul&gt;
                 </code></pre>
+                <p class="colorw">Y esto se muestra de la siguiente forma:</p>
+                <code>
+    <ul>
+        <li><span class="colorw">Elemento 1</span></li>
+        <li><span class="colorw">Elemento 2</span></li>
+        <li><span class="colorw">Elemento 3</span></li>
+    </ul>
+                </code>
+                <h2 id="ordenada">Lista ordenada</h2>
+                <p class="colorw">Para conseguir una lista que se muestra de forma organizada, debes usar la siguiente combinación de etiquetas:</p>
+                <pre><code>
+    &lt;ol&gt;
+        &lt;li&gt;<span class="colorw">Elemento 1</span>&lt;/li&gt;
+        &lt;li&gt;<span class="colorw">Elemento 2</span>&lt;/li&gt;
+        &lt;li&gt;<span class="colorw">Elemento 3</span>&lt;/li&gt;
+    &lt;/ol&gt;
+                </code></pre>
+                <p class="colorw">Y esto se muestra de la siguiente forma:</p>
+                <code>
+    <ol>
+        <li><span class="colorw">Elemento 1</span></li>
+        <li><span class="colorw">Elemento 2</span></li>
+        <li><span class="colorw">Elemento 3</span></li>
+    </ol>
+                </code>
+                <h2 id="definicion">Lista de definición</h2>
+                <p class="colorw">Para conseguir una lista donde se van a definir términos, debes usar la siguiente combinación de etiquetas:</p>
+                <pre><code>
+    &lt;dl&gt;
+        &lt;dt&gt;<span class="colorw">Elemento 1</span>&lt;/dt&gt;
+        &lt;dd&gt;<span class="colorw">Definición 1</span>&lt;/dd&gt;
+        &lt;dt&gt;<span class="colorw">Elemento 2</span>&lt;/dt&gt;
+        &lt;dd&gt;<span class="colorw">Definición 2</span>&lt;/dd&gt;
+        &lt;dt&gt;<span class="colorw">Elemento 3</span>&lt;/dt&gt;
+        &lt;dd&gt;<span class="colorw">Definición 3</span>&lt;/dd&gt;
+    &lt;/dl&gt;
+                </code></pre>
+                <p class="colorw">Y esto se muestra de la siguiente forma:</p>
+                <code>
+    <dl>
+        <dt><span class="colorw">Elemento 1</span></dt>
+        <dd><span class="colorw">Definición 1</span></dd>
+        <dt><span class="colorw">Elemento 2</span></dt>
+        <dd><span class="colorw">Definición 2</span></dd>
+        <dt><span class="colorw">Elemento 3</span></dt>
+        <dd><span class="colorw">Definición 3</span></dd>
+    </dl>
+                </code>
+                <br>
             </div>
         </div>
     </div>
