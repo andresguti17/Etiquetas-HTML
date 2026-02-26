@@ -1,0 +1,30 @@
+.barra-de-navegacion{
+    background-color: rgba(176, 196, 222, 0.5);
+    font-size: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: 2px solid lightsteelblue;
+}
+
+.boton{
+    font-size: 20px;
+    margin: -2px;
+    background-color: rgba(135, 206, 250, 0.500);
+    border-color: lightskyblue;
+    border-radius: 0px;
+    border-width: 2px;
+    height: 45px;
+    font-weight: bold;
+}
+
+.cuerpo{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+}
+
+.contenido {
+    background-color: rgba(128, 128, 128, 0.500);
+    border: 2px solid grey;
+}
