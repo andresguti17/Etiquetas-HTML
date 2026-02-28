@@ -31,9 +31,82 @@
         </div>
     </header>
     <div class="cuerpo">
+                
+          <div class="contenido">
+            <div style="margin-left: 40px; margin-right: 40px;">
+                <h2>ETIQUETAS</h2>
+                <hr style="background-color: black; border: none; height: 2px;">
+                <div style="grid-auto-columns: auto;">
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='#'">
+                            <b><p class="lista">Texto y contenido</p></b>
+                        </button>
+                    </li>
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                            <p class="lista">&lt;h1&gt; a &lt;h6&gt;</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                            <p class="lista">&lt;p&gt;</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                            <p class="lista">&lt;span&gt;</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                            <p class="lista">&lt;Strong&gt;</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                            <p class="lista">&lt;em&gt;</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                            <p class="lista">&lt;br&gt; / &lt;hr&gt; </p>
+                        </button>
+                    </li>
+
+                </div>
+            </div>
+        </div>
         <div class="contenido">
             <div style="margin-left: 50px; margin-right: 50px;">
-                <h1>INTRODUCCIÓN A TEXTO EN HTML</h1>
+              <h1>Texto en HTML</h1>
+              <p>Son etiquetas de encabezado que se usan para definir títulos y subtítulos en una página web.
+                Van desde  &lt;h1&gt; (más importante) hasta &lt;h6&gt; (menos importante).</p>
+
+                <h3>Sintaxis Basica</h3>
+                <pre><code>
+     &lt;h1 class="titulo" id="principal"&gt; <span class="colorw">Título principal</span>&lt;/h1&gt;
+        &lt;h2&gt;Subtítulo&lt;/h2&gt;
+        &lt;h3 style="color: blue;"&gt; <span class="colorw">Sección</span>&lt;/h3&gt;
+        &lt;h4&gt; <span class="colorw">Subsección</span>&lt;/h4&gt;
+            &lt;h5&gt; <span class="colorw">Detalle</span>&lt;/h5&gt;
+            &lt;h6&gt; <span class="colorw">Nota pequeña</span>&lt;/h6&gt; 
+                </code></pre>
+
+         <h3>visualización</h3>
+            <img src="img/visu.png" alt="">
+
+         <h3>Buenas practicas</h3>
+          <hr>
+          <ul class="lista2">
+            <li>Usar <span class="colorRed">&lt;h1&gt;</span> debe usarse solo una vez por página (título principal).</li>
+            <li>Mantener orden jerárquico (no saltar de <span class="colorRed">&lt;h1&gt;</span> a <span class="colorRed">&lt;h4&gt;</span> sin razón).</li>
+            <li>Usar para estructura, no para tamaño de texto.</li>
+            <li>No usar solo por diseño visual (eso es trabajo de CSS).</li>
+            </ul>
+            </div> 
+        </div>
+                
+              
             </div>
         </div>
     </div>
