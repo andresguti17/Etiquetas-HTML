@@ -31,83 +31,310 @@
         </div>
     </header>
     <div class="cuerpo">
-                
-          <div class="contenido">
+        <div class="layout">
+        <aside class="menu">
             <div style="margin-left: 40px; margin-right: 40px;">
                 <h2>ETIQUETAS</h2>
                 <hr style="background-color: black; border: none; height: 2px;">
                 <div style="grid-auto-columns: auto;">
                     <li>
                         <button style="border-width: 0px; background-color: transparent;" onclick="document.location='#'">
-                            <b><p class="lista">Texto y contenido</p></b>
+                            <b><p class="lista">Textos</p></b>
                         </button>
                     </li>
                     <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location=' #h1'">
                             <p class="lista">&lt;h1&gt; a &lt;h6&gt;</p>
                         </button>
                     </li>
                     <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='#p'">
                             <p class="lista">&lt;p&gt;</p>
                         </button>
                     </li>
                     <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='#span'">
                             <p class="lista">&lt;span&gt;</p>
                         </button>
                     </li>
                     <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='#strong'">
                             <p class="lista">&lt;Strong&gt;</p>
                         </button>
                     </li>
                     <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='#em'">
                             <p class="lista">&lt;em&gt;</p>
                         </button>
                     </li>
                     <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='#hr-br'">
                             <p class="lista">&lt;br&gt; / &lt;hr&gt; </p>
                         </button>
                     </li>
-
                 </div>
-            </div>
+        </div>
+        </aside>
         </div>
         <div class="contenido">
             <div style="margin-left: 50px; margin-right: 50px;">
-              <h1>Texto en HTML</h1>
-              <p>Son etiquetas de encabezado que se usan para definir títulos y subtítulos en una página web.
+            <section id="h1">
+            <hr>
+            <h1>Encabezados en HTML</h1>
+            <hr>
+            <p>Son etiquetas de encabezado que se usan para definir títulos y subtítulos en una página web.
                 Van desde  &lt;h1&gt; (más importante) hasta &lt;h6&gt; (menos importante).</p>
 
                 <h3>Sintaxis Basica</h3>
                 <pre><code>
-     &lt;h1 class="titulo" id="principal"&gt; <span class="colorw">Título principal</span>&lt;/h1&gt;
+    &lt;h1 class="titulo" id="principal"&gt; <span class="colorw">Título principal</span>&lt;/h1&gt;
         &lt;h2&gt;Subtítulo&lt;/h2&gt;
         &lt;h3 style="color: blue;"&gt; <span class="colorw">Sección</span>&lt;/h3&gt;
         &lt;h4&gt; <span class="colorw">Subsección</span>&lt;/h4&gt;
             &lt;h5&gt; <span class="colorw">Detalle</span>&lt;/h5&gt;
-            &lt;h6&gt; <span class="colorw">Nota pequeña</span>&lt;/h6&gt; 
+            &lt;h6&gt; <span class="colorw">Nota pequeña</span>&lt;/h6&gt;
                 </code></pre>
 
-         <h3>visualización</h3>
-            <img src="img/visu.png" alt="">
+        <h3>visualización</h3>
+        <span style="background-color: aliceblue;">
+        <h1 style="margin-left: 20px;"> Test de vista</h1>
+        <h2 style="margin-left: 35px;"> A F H T W R</h2>
+        <h3 style="margin-left: 70px;">  R U C L</h3>
+        <h4 style="margin-left: 70px;">  K M D 3</h4>
+            <h5 style="margin-left: 90px;"> 12 45 </h5>
+            <h6 style="margin-left: 90px;"> 5 8 9 </h6>
+            </span>
 
-         <h3>Buenas practicas</h3>
-          <hr>
-          <ul class="lista2">
+        <h3>Buenas practicas</h3>
+        <ul class="lista2">
             <li>Usar <span class="colorRed">&lt;h1&gt;</span> debe usarse solo una vez por página (título principal).</li>
             <li>Mantener orden jerárquico (no saltar de <span class="colorRed">&lt;h1&gt;</span> a <span class="colorRed">&lt;h4&gt;</span> sin razón).</li>
             <li>Usar para estructura, no para tamaño de texto.</li>
             <li>No usar solo por diseño visual (eso es trabajo de CSS).</li>
             </ul>
-            </div> 
-        </div>
-                
-              
             </div>
+        </section>
+        <hr>
+        <section id="p">
+            <h1> Etiqueta &lt;p&gt; </h1>
+            <hr>
+            <p>
+            El elemento HTML define un párrafo.Un párrafo siempre comienza en una nueva línea y los navegadores agregan
+            automáticamente un espacio en blanco (un margen) antes y después de un párrafo.
+            </p>
+            <h2>Sintaxis Basica</h2>
+            <pre><code>
+            &lt;p&gt;
+            <strong><span class="colorw">Keep it one hundred
+            On the land, the sea, the sky
+            Pledge allegiance to your hands
+            Your team, your vibes
+            Don't care where the hell you been
+            'Cause now you're mine
+            It's 'bout to be the sleepless night
+            You've been dreaming of
+            The fate of Ophelia</span></strong>
+            &lt;p&gt;
+            </code></pre>
+            <h2> Buenas prácticas</h2>
+            <ul class="lista2">
+            <li>Se usa para contenido textual, explicaciones, descripciones o información principal.</li>
+            <li>No usar solo para separar contenido visual.<span class="colorRed">&lt;p&gt;</span>.</li>
+            <li>No anidar etiquetas de bloque dentro de <span class="colorRed">&lt;p&gt;</span>.</li>
+            <li>Usar un <span class="colorRed">&lt;p&gt;</span> por idea o párrafo.</li>
+            </ul>
+        </section>
+        <section id="span">
+            <hr>
+            <h1>Etiqueta &lt;Span&gt; </h1>
+            <hr>
+            <p>La etiqueta &lt;span&gt; es un contenedor en línea (inline) de HTML que no tiene un significado semántico por sí mismo, pero permite agrupar
+            fragmentos de texto o elementos pequeños para aplicarles estilos específicos o comportamientos mediante programación.</p>
+            <h2>Sintáxis</h2>
+            <pre><code>
+            &lt; p &gt;
+            <span class="colorw">
+            And I won't confess that I waited, but I let the lamp burn
+            As the men masqueraded, I hoped you'd return
+            With your feet on the ground, tell me all that you'd learned
+            <span class="blue">&lt;span style="background-color:yellow" &gt;</span>'Cause love's never lost when perspective is earned <span class="blue">&lt;/span&gt;</span>
+            And you said you'd come and get me, but you were 25
+            And the shelf life of those fantasies has expired
+            Lost to the Lost Boys chapter of your life
+            </span>
+            &lt;/ p &gt;
+            </code></pre>
+            <br>
+            <h2> Ejemplo</h2>
+        <p>
+        <em><h3 style="padding-left: 10px;">Peter</h3></em>
+        And I won't confess that I waited, but I let the lamp burn <br>
+        As the men masqueraded, I hoped you'd return <br>
+        With your feet on the ground, tell me all that you'd learned <br>
+        <span style="background-color:yellow">'Cause love's never lost when perspective is earned</span> <br>
+        And you said you'd come and get me, but you were 25 <br>
+        And the shelf life of those fantasies has expired <br>
+        Lost to the Lost Boys chapter of your life <br>
+        </p>
+        <h2>Buenas practicas</h2>
+        <ul class="lista2">
+            <li>Ideal para estilos específicos, íconos o efectos dentro del texto.</li>
+            <li>No reemplaza etiquetas semánticas como <span class="colorRed">&lt;strong&gt;</span> o <span class="colorRed">&lt;em&gt;</span> .</li>
+            </ul>
+        </section>
+        <section id="strong">
+        <hr>
+        <h1>Etiqueta &lt;Strong&gt;</h1>
+        <hr>
+        <p>
+        La etiqueta &lt;strong&gt; es un elemento de HTML que se utiliza
+        para indicar que un texto tiene una importancia semántica fuerte,
+        una urgencia o una seriedad especial dentro de su contexto.
+        </p>
+        <h2>Sintaxis</h2>
+        <pre><code>
+        &lt;p&gt;
+        &lt;strong&gt; <span class="colorw">implosión:</span>&lt;/strong&gt;
+        <span class="colorw">colapso violento y rápido de un objeto hacia su centro, provocado cuando la presión externa supera a la interna</span>
+        &lt;/p&gt;
+        </code></pre>
+        <h2>Ejemplo</h2>
+        <p>
+        <strong>Implosión: </strong>
+        colapso violento y rápido de un objeto hacia su centro, provocado cuando la presión externa supera a la interna.
+        </p>
+        <h2>Buenas practicas</h2>
+        <ul>
+        <li>
+            <strong>Semántica, no estética:</strong> Úsala para marcar importancia real, no solo para poner negritas (para eso usa CSS).
+        </li>
+        <li>
+            <strong>Menos es más:</strong> Resalta solo palabras clave o avisos; si resaltas todo, nada parece importante.
+        </li>
+        <li>
+            <strong>Jerarquía clara:</strong> Reserva &lt;strong&gt; para urgencia/importancia y &lt;em&gt; para dar énfasis o tono.
+        </li>
+        <li>
+            <strong>Pensado para todos:</strong> Úsala para que los lectores de pantalla sepan qué parte del texto deben enfatizar, siguiendo las pautas <strong>WCAG</strong>.
+        </li>
+        <li>
+            <strong>Anidamiento:</strong> Úsalo doblemente solo si necesitas marcar un nivel de importancia extremo.
+        </li>
+        </ul>
+        </section>
+        <section id="em">
+        <hr>
+        <h1>Etiqueta &lt;em&gt;</h1>
+        <hr>
+        <p>
+            La etiqueta &lt;em&gt; es un elemento de HTML que se utiliza para indicar
+            énfasis semántico en un texto, es decir, para resaltar una palabra o frase
+            que cambia el tono, la intención o el significado dentro de una oración.
+        </p>
+        <h2>Sintaxis</h2>
+        <pre><code>
+        &lt;p&gt;
+        <span class="colorw">Nothin' lasts forever
+        And we both know hearts can change
+        And it's hard to hold a candle
+        In the cold November rain.</span>
+        &lt;em&gt; <span class="colorw">November rain gun Guns N' Roses</span>&lt;/em&gt;
+        &lt;/p&gt;
+        </code></pre>
+        <h2>Ejemplo</h2>
+        <p>
+        Nothin' lasts forever <br>
+        And we both know hearts can change <br>
+        And it's hard to hold a candle <br>
+        In the cold November rain
+        <br>
+        <em>November rain gun Guns N' Roses</em>
+        </p>
+        <h2>Buenas prácticas</h2>
+        <ul>
+        <li>
+        <strong>Énfasis, no solo cursiva:</strong> Usa &lt;em&gt; cuando el énfasis
+        cambie el sentido o intención del texto, no únicamente para estilizar.
+        </li>
+        <li>
+        <strong>Uso moderado:</strong> Emplea &lt;em&gt; solo en palabras o frases
+        clave; abusar de él reduce su impacto.
+        </li>
+        <li>
+        <strong>Diferencia semántica:</strong> Usa &lt;em&gt; para énfasis y
+        &lt;strong&gt; para importancia o urgencia.
+        </li>
+        <li>
+        <strong>Accesibilidad:</strong> Los lectores de pantalla interpretan
+        &lt;em&gt; con una entonación diferente, mejorando la comprensión del texto.
+        </li>
+        <li>
+        <strong>Anidamiento:</strong> Puedes anidar &lt;em&gt; para aumentar el
+        nivel de énfasis, pero hazlo con criterio.
+        </li>
+        </ul>
+        </section>
+        <section id="hr-br">
+        <hr>
+        <h1>Etiquetas &lt;br&gt; y &lt;hr&gt;</h1>
+        <hr>
+
+        <p>
+            Las etiquetas &lt;br&gt; y &lt;hr&gt; son elementos HTML que se utilizan
+            para estructurar el contenido visualmente. Aunque ambas generan separaciones,
+            su propósito semántico es diferente.
+        </p>
+
+        <p>
+            La etiqueta &lt;br&gt; inserta un salto de línea dentro de un mismo bloque de
+            texto, mientras que &lt;hr&gt; representa una separación temática entre
+            secciones de contenido.
+        </p>
+
+        <h2>Sintaxis</h2>
+        <pre><code>
+        &lt;p&gt;
+        Dirección:<br>
+        <span class="colorw">Calle 123 #45-67</span><br>
+        <span class="colorw">Neiva, Huila</span>
+        &lt;/p&gt;
+
+        &lt;hr&gt;
+        </code></pre>
+
+        <h2>Ejemplo</h2>
+        <p>
+            Dirección:<br>
+            Calle 123 #45-67<br>
+            Neiva, Huila
+        </p>
+        <hr>
+        <h2>Buenas prácticas</h2>
+        <ul>
+            <li>
+            <strong>&lt;br&gt; no reemplaza párrafos:</strong> Úsala solo para saltos
+            de línea dentro del mismo contenido, como direcciones, poemas o listas cortas.
+            </li>
+            <li>
+            <strong>&lt;hr&gt; es semántica:</strong> Representa un cambio de tema o
+            separación conceptual, no solo una línea decorativa.
+            </li>
+            <li>
+            <strong>No abusar:</strong> El uso excesivo de &lt;br&gt; o &lt;hr&gt;
+            puede afectar la legibilidad y la estructura del documento.
+            </li>
+            <li>
+            <strong>Estilos con CSS:</strong> Si necesitas ajustar espacios o diseño,
+            hazlo con CSS en lugar de agregar múltiples &lt;br&gt;.
+            </li>
+            <li>
+            <strong>Accesibilidad:</strong> Los lectores de pantalla interpretan
+            &lt;hr&gt; como un cambio de sección, mejorando la comprensión del contenido.
+            </li>
+        </ul>
+        </section>
+        </div>
+        </div>
         </div>
     </div>
 </body>
