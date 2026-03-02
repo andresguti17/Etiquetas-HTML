@@ -1,0 +1,18 @@
+[33m00f1f28[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mnicole[m[33m, [m[1;31morigin/guti[m[33m, [m[1;32mguti[m[33m)[m HEAD@{0}: reset: moving to origin/guti
+[33m9e597a7[m HEAD@{1}: rebase (abort): returning to refs/heads/nicole
+[33m54b8dee[m HEAD@{2}: pull origin guti --rebase (start): checkout 54b8dee94bd4011695d4e7b04c2d9808efe395f0
+[33m9e597a7[m HEAD@{3}: pull origin guti: Merge made by the 'ort' strategy.
+[33m1f6ba7d[m[33m ([m[1;31morigin/nicole[m[33m)[m HEAD@{4}: commit: Tablas y texto completos
+[33m468f40a[m HEAD@{5}: commit: correcion tablas
+[33m6de07d6[m HEAD@{6}: commit: mejora tablas-texto
+[33maa323c0[m HEAD@{7}: commit: Actualizo tabla
+[33m95ed745[m HEAD@{8}: commit (merge): Resuelvo conflicto en index.html
+[33m93f358a[m HEAD@{9}: commit: cambio tabla
+[33m6cfd8b1[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{10}: checkout: moving from main to nicole
+[33m6cfd8b1[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{11}: checkout: moving from nicole to main
+[33m6cfd8b1[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{12}: pull origin main: Fast-forward
+[33m756928d[m HEAD@{13}: checkout: moving from nicole to nicole
+[33m756928d[m HEAD@{14}: checkout: moving from guti to nicole
+[33m00f1f28[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mnicole[m[33m, [m[1;31morigin/guti[m[33m, [m[1;32mguti[m[33m)[m HEAD@{15}: checkout: moving from main to guti
+[33m6cfd8b1[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{16}: checkout: moving from main to main
+[33m6cfd8b1[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{17}: clone: from https://github.com/andresguti17/Etiquetas-HTML.git

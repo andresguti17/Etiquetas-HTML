@@ -6,7 +6,7 @@
     <title>Tablas HTML</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body style="background-color: rgba(0, 255, 255, 0.250);">
+<body style="background-color: #fbfbfb;">
     <header>
         <div class="barra-de-navegacion">
             <div>
@@ -31,8 +31,8 @@
         </div>
     </header>
     <div class="cuerpo">
-        
-          <div class="contenido">
+        <div class="layout">
+        <aside class="menu">
             <div style="margin-left: 40px; margin-right: 40px;">
                 <h2>ETIQUETAS</h2>
                 <hr style="background-color: black; border: none; height: 2px;">
@@ -42,38 +42,45 @@
                             <b><p class="lista">Tablas</p></b>
                         </button>
                     </li>
+                    <hr style="color: black">
                     <li>
                         <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#definicion'">
                             <p class="lista">Definicion</p>
                         </button>
                     </li>
+                    <hr style="color: black">
                     <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#definicion'">
+                        <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#Sintaxis'">
                             <p class="lista">Sintáxis</p>
                         </button>
                     </li>
+                    <hr style="color: black">
                     <li>
                         <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#vizualizacion'">
                             <p class="lista">visualización</p>
                         </button>
                     </li>
+                    <hr style="color: black">
                     <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#vizualizacion'">
-                            <p class="lista">Ventajas</p>
+                        <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#buenas'">
+                            <p class="lista">buenas practicas</p>
                         </button>
                     </li>
-
+                    <hr style="color: black">
                 </div>
             </div>
+        </aside>
         </div>
         <div class="contenido">
             <div style="margin-left: 50px; margin-right: 50px;">
                 <section id="definicion">
-                   <h1>Tablas en HTML</h1>
-                <p>Las tablas HTML permiten a los desarrolladores 
-                web organizar y tabular los datos en filas y columnas.
+                <hr>
+                <h1>Tablas en HTML</h1>
+                <hr>
+                <p>Las tablas HTML permiten a los desarrolladores
+                web organizar y tabular los datos como estadísticas, comparaciones o inventarios, de manera que sea fácil 
+                de leer y comprender en filas y columnas.
                 </p>
-
             <pre> <code>
                 &lt;th&gt; <span style="color: green;"> // Encabezado de la tabla</span>
                 &lt;thead&gt; <span style="color: green;"> // Agrupo el contenido de los encabezados de la tabla </span>
@@ -82,72 +89,91 @@
                 &lt;tbody&gt; <span style="color: green;"> // Agrupa los cuerpos de cada tabla </span>
             </code></pre>
             </section>
- <section id="vizualizacion">
+            <section id="Sintaxis">
             <div>
-                <h2>Ejemplo en codgio</h2>
-                <pre><code>
-&lt;table border="1" style="border-collapse: collapse;"&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Nombre&lt;/th&gt;
-      &lt;th&gt;Ciudad&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;ñ
-    &lt;tr&gt;
-      &lt;td&gt;Nicole&lt;/td&gt;
-      &lt;td&gt;Neiva&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-</code></pre>     
-            </div>
-            <br>
-            <div>
-                 <h3>Ejemplo visualización</h3>
-            <table class="tabla"> 
-                <thead> 
+            <h2>Ejemplo en codigo</h2>
+            <pre><code>
+        &lt;table border="1" style="border-collapse: collapse;"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+            &lt;th&gt;<span class="colorw">Nombre</span>&lt;/th&gt;
+            &lt;th&gt;<span class="colorw">Ciudad</span>&lt;/th&gt;
+            &lt;th&gt;<span class="colorw">Edad</span>&lt;/th&gt;
+            &lt;th&gt;<span class="colorw">estatura</span>&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;ñ
+            &lt;tr&gt;
+            &lt;td&gt;<span class="colorw">Nicole</span>&lt;/td&gt;
+            &lt;td&gt;<span class="colorw">Neiva</span>&lt;/td&gt;
+            &lt;td&gt;<span class="colorw">18</span>&lt;/td&gt;
+            &lt;td&gt;<span class="colorw">1,60 cm</span>&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;<span class="colorw">Maria</span>&lt;/td&gt;
+            &lt;td&gt;<span class="colorw">Neiva</span>&lt;/td&gt;
+            &lt;td&gt;<span class="colorw">11</span>&lt;/td&gt;
+            &lt;td&gt;<span class="colorw">1,40 cm</span>&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;<span class="colorw">Victoria</span>&lt;/td&gt;
+            &lt;td&gt;<span class="colorw">Neiva</span>&lt;/td&gt;
+            &lt;td&gt;<span class="colorw">1</span>&lt;/td&gt;
+            &lt;td&gt;<span class="colorw">80 cm</span>&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+        &lt;/table&gt;
+        </code></pre>
+        </div>
+        <br>
+        <div>
+        </section>
+        <section id="vizualizacion">
+                <h3>Ejemplo visualización</h3>
+            <table class="tabla">
+                <thead>
                     <tr>
-                     <th>Nombre</th>
-                      <th>Ciudad</th>
-                      <th>Edad</th>
-                      <th>estatura</th>
-                     </tr>
-                     </thead> 
-                     <tbody> 
-                        <tr> 
-                            <td>Nicole</td> 
+                    <th>Nombre</th>
+                    <th>Ciudad</th>
+                    <th>Edad</th>
+                    <th>estatura</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nicole</td>
                             <td>Neiva</td>
                             <td>18</td>
                             <td>1,60 cm</td>
-                         </tr> 
-                         <tr>
-                             <td>Belen</td> 
+                        </tr>
+                        <tr>
+                            <td>Belen</td>
                             <td>Neiva</td>
                             <td>11</td>
                             <td>1,30 cm</td>
-                         </tr>
-                         <tr>
-                             <td>Victoria</td> 
+                        </tr>
+                        <tr>
+                            <td>Victoria</td>
                             <td>Neiva</td>
                             <td>1</td>
                             <td>60 cm</td>
-                         </tr>
-                        </tbody> 
+                        </tr>
+                        </tbody>
                     </table>
             </div>
-          <hr>
-          <h2>Buenas practicas</h2>
-          <hr>
-          <ul class="lista2">
+        </section>
+        <hr>
+        <section id="buenas">
+        <h2>Buenas practicas</h2>
+        <hr>
+        <ul class="lista2">
             <li>Usar <span class="colorRed">&lt;table&gt;</span> solo para datos, no para diseño.</li>
             <li>Encabezados claros con <span class="colorRed">&lt;th&gt;</span> y <span class="colorRed">&lt;code&gt;</span>scope<span class="colorRed">&lt;/code&gt;</span> para accesibilidad.</li>
             <li>Filas <span class="colorRed">&lt;tr&gt;</span> y celdas <span class="colorRed">&lt;td&gt;</span> bien organizadas.</li>
             <li>Usar <span class="colorRed">&lt;caption&gt;</span> y <span class="colorRed">&lt;thead&gt;</span>/<span class="colorRed">&lt;tbody&gt;</span>/<span class="colorRed">&lt;tfoot&gt;</span> para estructura y claridad.</li>
             <li>Estilos con CSS, no con atributos HTML, y evitar tablas anidadas innecesarias.</li>
             </ul>
-
-            </div> 
+        </div>
         </div>
         </section>
         

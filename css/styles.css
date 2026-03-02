@@ -1,5 +1,5 @@
 .barra-de-navegacion{
-    background-color: rgba(176, 196, 222, 0.5);
+    background-color: rgba(135, 206, 250, 0.500);
     font-size: 20px;
     height: 50px;
     display: flex;
@@ -23,10 +23,11 @@
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 25px;
+    display: flex;
 }
 
 .contenido {
-    background-color: rgba(128, 128, 128, 0.500);
+    background-color: rgba(163, 160, 160, 0.5);
     border: 2px solid grey;
     border-radius: 10px;
     justify-content: center;
@@ -51,4 +52,29 @@ code {
 
 .colorw{
     color: rgb(36, 35, 35);
+}
+
+.menu {
+position: sticky;
+top: 40px;
+width: 220px;
+min-width: 220px;
+max-width: 220px;
+height: fit-content;
+flex-shrink: auto;
+display: flex;
+}
+
+
+
+.layout {
+    background-color: rgba(135, 206, 250, 0.500);
+    font-size: 20px;
+display: flex;
+border-radius: 10px;
+align-items: flex-start;
+gap: 40px;
+max-width: 1000px;
+margin: 40px auto;
+padding: 30px;
 }
