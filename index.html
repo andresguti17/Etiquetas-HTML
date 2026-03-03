@@ -6,7 +6,7 @@
     <title>Etiquetas HTML</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body style="background-color: rgba(0, 255, 255, 0.250);">
+<body style="background-color: #fbfbfb;">
     <header>
         <div class="barra-de-navegacion">
             <div>
@@ -31,11 +31,75 @@
         </div>
     </header>
     <div class="cuerpo">
-        <div class="contenido">
-            <div style="margin-left: 50px; margin-right: 50px;">
-                <h1>INTRODUCCIÓN A HTML</h1>
+                <div class="layout">
+        <aside class="menu">
+            <div style="margin-left: 40px; margin-right: 40px;">
+                <h2>Guia HTML</h2>
+                <hr style="background-color: black; border: none; height: 2px;">
+                <div style="grid-auto-columns: auto;">
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent;" onclick="document.location='#'">
+                            <b><p class="lista">¿Que es HTML?</p></b>
+                        </button>
+                    </li>
+                    <hr style="color: black">
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#definicion'">
+                            <p class="lista">Estructura</p>
+                        </button>
+                    </li>
+                    <hr style="color: black">
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#Sintaxis'">
+                            <p class="lista">Partes</p>
+                        </button>
+                    </li>
+                    <hr>
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#vizualizacion'">
+                            <p class="lista">visualización</p>
+                        </button>
+                    </li>
+                    <hr>
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#buenas'">
+                            <p class="lista">buenas practicas</p>
+                        </button>
+                    </li>
+                    <hr>
+                </div>
             </div>
+        </aside>
         </div>
+            <div class="contenido">
+                <div style="margin-left: 50px; margin-right: 50px;">
+                    <h1>INTRODUCCIÓN A HTML</h1>
+                    <p class="colorw">El lenguaje de marcado de hipertexto (HTML) es el lenguaje de marcado estándar para documentos diseñados para su visualización en navegadores web.</p>
+                            <h3>Estructura básica de un documento HTML: </h3>
+                        <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt; head&gt;
+            &lt;meta charset=<span class="colorRed">"UTF-8" </span>&gt;
+            &lt;meta name= <span class="colorRed">"viewport"</span> content=<span class="colorRed">"width=device-width, initial-scale=1.0"</span>&gt;
+            &lt;title&gt;<span class="colorw">Document</span>&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt; <span class="colorw">Título</span>&lt;/h1&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+                        </code></pre>
+                <h3>Partes principales de un documento HTML</h3>
+                <ul>
+                <li><b>&lt;!DOCTYPE html&gt;</b> → Indica al navegador que el documento usa HTML5.</li>
+                <li><b>&lt;html&gt;</b> → Es la etiqueta raíz que contiene todo el documento.</li>
+                <li><b>&lt;head&gt;</b> → Contiene información sobre la página como el título,
+                los metadatos y enlaces a archivos CSS o JavaScript.</li>
+                <li><b>&lt;title&gt;</b> → Define el título que aparece en la pestaña del navegador.</li>
+                <li><b>&lt;body&gt;</b> → Contiene todo el contenido visible de la página.</li>
+                </ul>
+                </div>
+            </div>
     </div>
 </body>
 </html>
