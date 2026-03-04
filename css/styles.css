@@ -19,6 +19,10 @@
     font-weight: bold;
 }
 
+.btn-menu {
+    display: none;
+}
+
 .cuerpo{
     margin-left: 50px;
     margin-right: 50px;
@@ -33,7 +37,7 @@
     justify-content: center;
     max-width: 1000px;
     margin: 40px auto;
-    padding: 30;
+    padding: 30px;
 }
 code {
 
@@ -77,4 +81,51 @@ gap: 40px;
 max-width: 1000px;
 margin: 40px auto;
 padding: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .barra-de-navegacion {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    .boton {
+        width: 100%;
+        margin: 2px 0;
+    }
+    .cuerpo {
+        flex-direction: column;
+        margin: 20px;
+    }
+    
+    .menu {
+        display: none;
+    }
+
+    .layout {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contenido {
+        width: 100%;
+        max-width: none;
+    }
+
+    code {
+    background-color: #f4f4f4;
+    padding: 5px;
+    display: block;
+    border-radius: 10px;
+    font-family: monospace;
+    color: rgb(108, 155, 211);
+
+    overflow-x: auto;
+    white-space: pre;
+    max-width: 100%;
+}
+    
 }
