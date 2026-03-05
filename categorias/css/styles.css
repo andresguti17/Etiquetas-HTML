@@ -137,12 +137,14 @@ padding: auto;
     }
 
     .layout {
-       display: none;
+    display: none;
     }
 
     .contenido {
         width: 100%;
         max-width: none;
+        padding: 5px;
+        flex-wrap: wrap;
     }
 
     code {
