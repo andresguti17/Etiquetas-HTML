@@ -1,6 +1,6 @@
 /* estillo del modo escritorio*/
 .barra-de-navegacion {
-    background-color: rgba(135, 206, 250, 0.500);
+    background-color:  #4c7caf;
     font-size: 20px;
     height: 50px;
     display: flex;
@@ -12,8 +12,8 @@
 .boton {
     font-size: 20px;
     margin: -2px;
-    background-color: rgba(135, 206, 250, 0.500);
-    border-color: lightskyblue;
+    background-color:  #4c7caf;
+    border-color:  #4c7caf;
     border-radius: 5px;
     border-width: 2px;
     height: 45px;
@@ -73,7 +73,7 @@ code {
 }
 
 .layout {
-    background-color: rgba(135, 206, 250, 0.500);
+    background-color:  #4c7caf;
     font-size: 20px;
     display: flex;
     border-radius: 10px;
@@ -141,7 +141,7 @@ input[type="text"], input[type="email"], textarea {
     border-radius: 5px;
 }
 
-.boton {
+.boton2 {
     background-color: #4c7caf;
     color: white;
     padding: 6px 14px;
@@ -155,13 +155,13 @@ input[type="text"], input[type="email"], textarea {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.boton:hover {
-    background-color: #45a049;
+.boton2:hover {
+    background-color: #59af4c;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: translateY(-1px);
 }
 
-.boton:active {
+.boton2:active {
     transform: translateY(0);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
