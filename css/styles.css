@@ -1,3 +1,4 @@
+/* estillo del modo escritorio*/
 .barra-de-navegacion {
     background-color: rgba(135, 206, 250, 0.500);
     font-size: 20px;
@@ -19,9 +20,6 @@
     font-weight: bold;
 }
 
-.btn-menu {
-    display: none;
-}
 
 .cuerpo {
     margin-left: 25px;
@@ -60,13 +58,13 @@ code {
 
 .menu {
     position: sticky;
-    top: 40px;
+    top: 60px;
     width: 220px;
     min-width: 220px;
     max-width: 220px;
     height: fit-content;
-    max-height: min-content;
-    flex-shrink: auto;
+    flex-shrink: 0;
+    align-self: flex-start;
     display: flex;
 }
 
@@ -116,6 +114,7 @@ code {
     padding: auto;
 }
 
+/* estillo del modo móvil */
 @media (max-width: 768px) {
 
     .barra-de-navegacion {
