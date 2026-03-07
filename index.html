@@ -11,7 +11,7 @@
         <div class="barra-de-navegacion">
             <div>
                 <button style="border-width: 0px; background-color: transparent;" onclick="document.location='#'">
-                    <h1 style="font-family: Arial, Helvetica, sans-serif;">ㅤHTML</h1>
+                    <h1 style="font-family: Arial, Helvetica, sans-serif; color: #fbfbfb;">ㅤHTML</h1>
                 </button>
             </div>
             <div style="margin-left: auto;">
@@ -34,34 +34,34 @@
         <div class="layout">
         <aside class="menu">
             <div style="margin-left: 40px; margin-right: 40px;">
-                <h2>Guia HTML</h2>
-                <hr style="background-color: black; border: none; height: 2px;">
+                <h2  class="colorwhite">Guia HTML</h2>
+                <hr>
                 <div style="grid-auto-columns: auto;">
-                    <li>
+                    <li class="colorwhite">
                         <button style="border-width: 0px; background-color: transparent;" onclick="document.location='#'">
                             <b><p class="lista">¿Que es HTML?</p></b>
                         </button>
                     </li>
-                    <hr style="color: black">
-                    <li>
+                    <hr>
+                    <li class="colorwhite">
                         <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#introduccion'">
                             <p class="lista">Estructura</p>
                         </button>
                     </li>
-                    <hr style="color: black">
-                    <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#introduccion'">
+                    <hr>
+                    <li class="colorwhite">
+                        <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#partes'">
                             <p class="lista">Partes</p>
                         </button>
                     </li>
                     <hr>
-                    <li>
+                    <li class="colorwhite">
                         <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#buenas'">
                             <p class="lista">Buenas practicas</p>
                         </button>
                     </li>
                     <hr>
-                    <li>
+                    <li class="colorwhite">
                         <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#atributos'">
                             <p class="lista">Atributos</p>
                         </button>
@@ -90,6 +90,8 @@
         &lt;/body&gt;
         &lt;/html&gt;
                         </code></pre>
+                </section>
+                <section id="partes">
                 <h3>Partes principales de un documento HTML</h3>
                 <ul>
                 <li><b>&lt;!DOCTYPE html&gt;</b> → Indica al navegador que el documento usa HTML5.</li>
@@ -122,17 +124,37 @@
                 </ul>
                 </section>
                 </div>
+                    <form action="#">
+                        <fieldset>
+                            <legend><h2>¿Quieres enviarnos sugerencias?</h2></legend>
+                            <label for="nombre">Nombre*</label><br>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre."><br><br>
+                            <label for="apellido">Apellido*</label><br>
+                            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido."><br><br>
+                            <label for="correo">Correo electrónico</label><br>
+                            <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico."><br><br>
+                            <label for="telefono">Teléfono</label><br>
+                            <input type="number" id="telefono" name="telefono" placeholder="Ingrese su teléfono."><br><br>
+                            <label for="sugerencia">Sugerencia*</label><br>
+                            <textarea name="sugerencia" id="sugerencia" rows="5" cols="50" placeholder="Ingrese su sugerencia."></textarea><br><br>
+                            <label for="evidencia">Evidencia</label><br>
+                            <input type="file" id="evidencia" name="evidencia">
+                            <br>
+                            <br>
+                            <input class="boton2" type="submit" value="Enviar formulario" >
+                        </fieldset>
+                    </form>
+                    
             </div>
+        </div>
     </div>
 </body>
-
+<script src="./js/script.js"></script>
 <footer>
     <div class="footer">
-        <h3 style="font-family:'Courier New', Courier, monospace;">Etiquetas HTML</h3>
-        <p>© 2026 Guia HTML. Todos los derechos reservados.</p>
+        <h4 style="font-family:'Courier New', Courier, monospace; text-decoration: underline;">Etiquetas HTML</h4>
+        <p >© 2026 Guia HTML. Todos los derechos reservados.</p>
         <p>Creado por Guti y Niki</p>
-        <p>Refrencia:
-            <a href="https://developer.mozilla.org/es/docs/Web/HTML">https://developer.mozilla.org/es/docs/Web/HTML</a>
-        </p>
     </div>
+
 </html>
