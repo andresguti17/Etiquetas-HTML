@@ -14,13 +14,17 @@
     margin: -2px;
     background-color:  #4c7caf;
     border-color:  #4c7caf;
-    border-radius: 5px;
+    border-radius: 7px;
     border-width: 2px;
-    height: 45px;
+    height: 40px;
     font-weight: bold;
     color: white;
 }
-
+.boton:hover{
+    background-color: #59af4c;
+    border-color: #59af4c;
+    color: white;
+}
 
 .cuerpo {
     margin-left: 25px;
@@ -89,6 +93,18 @@ code {
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     color: white;
+    border-width: 0px;
+    background-color: transparent;
+    transition: transform 0.3s ease, color 0.3s ease
+}
+.butun{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.butun:hover .lista{
+    transform: scale(1.2);
 }
 
 .tabla {
