@@ -18,6 +18,7 @@
     border-width: 2px;
     height: 45px;
     font-weight: bold;
+    color: white;
 }
 
 
@@ -87,6 +88,7 @@ code {
 .lista {
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 .tabla {
@@ -123,6 +125,15 @@ form {
     margin: 20px auto;
     margin-left: 50px;
     margin-right: 50px;
+
+}
+
+.colorwhite{
+    color: white;
+}
+button{
+
+
 
 }
 
