@@ -1,5 +1,6 @@
+/* estillo del modo escritorio*/
 .barra-de-navegacion {
-    background-color: rgba(135, 206, 250, 0.500);
+    background-color:  #4c7caf;
     font-size: 20px;
     height: 50px;
     display: flex;
@@ -11,16 +12,18 @@
 .boton {
     font-size: 20px;
     margin: -2px;
-    background-color: rgba(135, 206, 250, 0.500);
-    border-color: lightskyblue;
-    border-radius: 5px;
+    background-color:  #4c7caf;
+    border-color:  #4c7caf;
+    border-radius: 7px;
     border-width: 2px;
-    height: 45px;
+    height: 40px;
     font-weight: bold;
+    color: white;
 }
-
-.btn-menu {
-    display: none;
+.boton:hover{
+    background-color: #59af4c;
+    border-color: #59af4c;
+    color: white;
 }
 
 .cuerpo {
@@ -60,13 +63,13 @@ code {
 
 .menu {
     position: sticky;
-    top: 40px;
+    top: 60px;
     width: 220px;
     min-width: 220px;
     max-width: 220px;
     height: fit-content;
-    max-height: min-content;
-    flex-shrink: auto;
+    flex-shrink: 0;
+    align-self: flex-start;
     display: flex;
 }
 
@@ -75,7 +78,7 @@ code {
 }
 
 .layout {
-    background-color: rgba(135, 206, 250, 0.500);
+    background-color:  #4c7caf;
     font-size: 20px;
     display: flex;
     border-radius: 10px;
@@ -89,6 +92,19 @@ code {
 .lista {
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
+    color: white;
+    border-width: 0px;
+    background-color: transparent;
+    transition: transform 0.3s ease, color 0.3s ease
+}
+.butun{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.butun:hover .lista{
+    transform: scale(1.2);
 }
 
 .tabla {
@@ -116,6 +132,69 @@ code {
     padding: auto;
 }
 
+form {
+    background-color: rgb(249, 244, 244);
+    border: 2px solid  rgb(249, 244, 244);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.colorwhite{
+    color: white;
+}
+button{
+
+
+
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#telefono  {
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.boton2 {
+    background-color: #4c7caf;
+    color: white;
+    padding: 6px 14px;
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    margin: 5px 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.boton2:hover {
+    background-color: #59af4c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+.boton2:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* estillo del modo móvil */
 @media (max-width: 768px) {
 
     .barra-de-navegacion {
