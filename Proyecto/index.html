@@ -15,16 +15,16 @@
                 </button>
             </div>
             <div style="margin-left: auto;">
-                <a href="categorias/texto/index.html">
+                <a href="./texto.html">
                     <button class="boton">ㅤㅤTextoㅤㅤ</button>
                 </a>
-                <a href="categorias/listas/index.html">
+                <a href="listas.html">
                     <button class="boton">ㅤㅤListasㅤㅤ</button>
                 </a>
-                <a href="categorias/formularios/index.html">
+                <a href="formularios.html">
                     <button class="boton">ㅤㅤFormulariosㅤㅤ</button>
                 </a>
-                <a href="categorias/tablas/index.html">
+                <a href="tablas.html">
                     <button class="boton">ㅤㅤTablasㅤㅤ</button>
                 </a>
             </div>
@@ -44,23 +44,20 @@
                     </li>
                     <hr style="color: black">
                     <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#introduccion'">
+                        <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#estructura'">
                             <p class="lista">Estructura</p>
                         </button>
                     </li>
-                    <hr style="color: black">
                     <li>
-                        <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#introduccion'">
+                        <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#partes'">
                             <p class="lista">Partes</p>
                         </button>
                     </li>
-                    <hr>
                     <li>
                         <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#buenas'">
                             <p class="lista">Buenas practicas</p>
                         </button>
                     </li>
-                    <hr>
                     <li>
                         <button style="border-width: 0px; background-color: transparent;" onclick="location.href='#atributos'">
                             <p class="lista">Atributos</p>
@@ -76,7 +73,7 @@
                     <section id="introduccion">
                     <h1>INTRODUCCIÓN A HTML</h1>
                     <p class="colorw">El lenguaje de marcado de hipertexto (HTML) es el lenguaje de marcado estándar para documentos diseñados para su visualización en navegadores web.</p>
-                            <h3>Estructura básica de un documento HTML: </h3>
+                            <h3 id="estructura">Estructura básica de un documento HTML: </h3>
                         <pre><code>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
@@ -90,7 +87,7 @@
         &lt;/body&gt;
         &lt;/html&gt;
                         </code></pre>
-                <h3>Partes principales de un documento HTML</h3>
+                <h3 id="partes">Partes principales de un documento HTML</h3>
                 <ul>
                 <li><b>&lt;!DOCTYPE html&gt;</b> → Indica al navegador que el documento usa HTML5.</li>
                 <li><b>&lt;html&gt;</b> → Es la etiqueta raíz que contiene todo el documento.</li>
@@ -102,7 +99,7 @@
                 </section>
                 <br>
                 <section id="buenas practicas">
-                <h3>Buenas prácticas de HTML</h3>
+                <h3 id="buenas">Buenas prácticas de HTML</h3>
                 <ul>
                 <li>Usar etiquetas semánticas como &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;, &lt;footer&gt; para que el contenido tenga significado y sea más accesible.</li>
                 <li>Mantener una estructura ordenada y bien indentada para que el código sea fácil de leer.</li>
