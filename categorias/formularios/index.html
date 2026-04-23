@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body style="background-color: #fbfbfb;">
+    <header>
+        <div class="barra-de-navegacion">
+            <div>
+                <button style="border-width: 0px; background-color: transparent;" onclick="document.location='../../index.html'">
+                    <h1 style="font-family: Arial, Helvetica, sans-serif;">ㅤHTML</h1>
+                </button>
+            </div>
+            <div style="margin-left: auto;">
+                <a href="../texto/index.html">
+                    <button class="boton">ㅤㅤTextoㅤㅤ</button>
+                </a>
+                <a href="../listas/index.html">
+                    <button class="boton">ㅤㅤListasㅤㅤ</button>
+                </a>
+                <a href="#">
+                    <button class="boton">ㅤㅤFormulariosㅤㅤ</button>
+                </a>
+                <a href="../tablas/index.html">
+                    <button class="boton">ㅤㅤTablasㅤㅤ</button>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="cuerpo">
+        <div class="layout">
+        <aside class="menu">
+            <div style="margin-left: 40px; margin-right: 15px;">
+                <h2>ETIQUETAS</h2>
+                <hr style="background-color: black; border: none; height: 2px;">
+                <div style="grid-auto-columns: auto;">
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#listas'">
+                            <b><p class="lista">FORMULARIOS</p></b>
+                        </button>
+                    </li>
+                    <hr style="color: black">
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#ul'">
+                            <p class="lista">&lt;form&gt;</p>
+                        </button>
+                    </li>
+                    <hr style="color: black">
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#ol'">
+                            <p class="lista">&lt;label&gt;</p>
+                        </button>
+                    </li>
+                    <hr style="color: black">
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#li'">
+                            <p class="lista">&lt;input&gt;</p>
+                        </button>
+                    </li>
+                    <hr style="color: black">
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#dl'">
+                            <p class="lista">&lt;textarea&gt;</p>
+                        </button>
+                    </li>
+                    <hr style="color: black">
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#dt'">
+                            <p class="lista">&lt;select&gt;</p>
+                        </button>
+                    </li>
+                    <hr style="color: black">
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#dd'">
+                            <p class="lista">&lt;option&gt;</p>
+                        </button>
+                    </li>
+                    <hr style="color: black">
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#dl'">
+                            <p class="lista">&lt;button&gt;</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#dt'">
+                            <p class="lista">&lt;fieldset&gt;</p>
+                        </button>
+                    </li>
+                    <hr style="color: black">
+                    <li>
+                        <button style="border-width: 0px; background-color: transparent; height: 18px;" onclick="location.href='#dd'">
+                            <p class="lista">&lt;legend&gt;</p>
+                        </button>
+                    </li>
+                    <br>
+                </div>
+                
+            </div>
+        </aside>
+        </div>
+        <div class="contenido">
+            <div style="margin-left: 50px; margin-right: 50px;">
+                <h1 id="listas">INTRODUCCIÓN A FORMULARIOS EN HTML</h1>
+                <p class="colorw">En HTML, una lista es una estructura que permite organizar y mostrar elementos relacionados de forma ordenada o desordenada dentro de una página web.</p>
+                <p class="colorw">Actualmente, en HTML existen 6 etiquetas. Mediante estas 6 etiquetas se pueden mencionar 3 tipos de listas.
+                Primero, mencionaremos todas las etiquetas para después mostrar los tipos de listas que se pueden hacer con estas.</p>
+
+                <h2 id="form">&lt;form&gt;</h2>
+                <p class="colorw">Contenedor principal que agrupa todos los elementos de un formulario y permite enviar datos al servidor.</p>
+                <pre><code>
+    &lt;form&gt;
+
+    &lt;/form&gt;
+                </code></pre>
+
+                <h2 id="label">&lt;label&gt;</h2>
+                <p class="colorw">Define una etiqueta descriptiva para un campo de entrada. Mejora la accesibilidad.</p>
+                <pre><code>
+    &lt;form&gt;
+        &lt;label&gt;<span class="colorw"><span class="colorw">Ingrese su nombre:</span>&lt;/label&gt;
+    &lt;/form&gt;
+                </code></pre>
+
+                <div>
+                    <h2 id="input">&lt;input&gt;</h2>
+                    <p class="colorw">Campo de entrada de datos. Su comportamiento cambia según el atributo type.</p>
+
+                    <h1 id="tipos">TIPOS DE INPUT</h1>
+                    <h2 id="desordenada">text</h2>
+                    <p class="colorw">Campo para texto corto (nombre, usuario, etc.).</p>
+                    <pre><code>
+        &lt;form&gt;
+            &lt;label for="nombre"&gt;<span class="colorw">Ingrese su nombre:</span>&lt;/label&gt;
+            &lt;input type="text" id="nombre" name="nombre"&gt;
+        &lt;/form&gt;
+                    </code></pre>
+                    <p class="colorw">Vista previa:</p>
+                    <pre><code>
+        <span class="colorw"><form><label for="nombre">Ingrese su nombre:</label>
+        <input type="text" id="nombre" name="nombre"></form></span>
+                    </code></pre>
+                    
+                    <h2 id="desordenada">email</h2>
+                    <p class="colorw">Campo para correos electrónicos (valida formato automáticamente).</p>
+                    <pre><code>
+        &lt;form&gt;
+            &lt;label for="correo"&gt;<span class="colorw">Ingrese su correo electrónico:</span>&lt;/label&gt;
+            &lt;input type="email" id="correo" name="correo"&gt;
+        &lt;/form&gt;
+                    </code></pre>
+                    <p class="colorw">Vista previa:</p>
+                    <pre><code>
+        <span class="colorw"><form><label for="correo">Ingrese su correo electrónico:</label>
+        <input type="email" id="correo" name="correo"></form></span>
+                    </code></pre>
+
+                    <h2 id="desordenada">password</h2>
+                    <p class="colorw">Campo para contraseñas (oculta los caracteres).</p>
+                    <pre><code>
+        &lt;form&gt;
+            &lt;label for="contraseña"&gt;<span class="colorw">Ingrese su contraseña:</span>&lt;/label&gt;
+            &lt;input type="password" id="contraseña" name="contraseña"&gt;
+        &lt;/form&gt;
+                    </code></pre>
+                    <p class="colorw">Vista previa:</p>
+                    <pre><code>
+        <span class="colorw"><form><label for="contraseña">Ingrese su contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña"></form></span>
+                    </code></pre>
+
+                    <h2 id="desordenada">number</h2>
+                    <p class="colorw">Permite ingresar solo números.</p>
+                    <pre><code>
+        &lt;form&gt;
+            &lt;label for="identificacion"&gt;<span class="colorw">Ingrese su documento de identificación:</span>&lt;/label&gt;
+            &lt;input type="number" id="identificacion" name="identificacion"&gt;
+        &lt;/form&gt;
+                    </code></pre>
+                    <p class="colorw">Vista previa:</p>
+                    <pre><code>
+        <span class="colorw"><form><label for="identificacion">Ingrese su documento de identificación:</label>
+        <input type="number" id="identificacion" name="identificacion"></form></span>
+                    </code></pre>
+
+                    <h2 id="desordenada">date</h2>
+                    <p class="colorw">Muestra un selector de fecha.</p>
+                    <pre><code>
+        &lt;form&gt;
+            &lt;label for="fecha"&gt;<span class="colorw">Ingrese su fecha de nacimiento:</span>&lt;/label&gt;
+            &lt;input type="date" id="fecha" name="fecha"&gt;
+        &lt;/form&gt;
+                    </code></pre>
+                    <p class="colorw">Vista previa:</p>
+                    <pre><code>
+        <span class="colorw"><form><label for="fecha">Ingrese su fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha"></form></span>
+                    </code></pre>
+
+                    <h2 id="desordenada">radio</h2>
+                    <p class="colorw">Permite seleccionar una sola opción dentro de un grupo.</p>
+                    <pre><code>
+        &lt;p&gt;<span class="colorw">Seleccione su estado:</span>&lt;/p&gt;
+        &lt;form&gt;
+            &lt;input type="radio" id="casado" name="estado" value="casado"&gt;
+            &lt;label for="casado"&gt;<span class="colorw">Casado</span>&lt;/label&gt;&lt;br&gt;
+            &lt;input type="radio" id="soltero" name="estado" value="soltero"&gt;
+            &lt;label for="soltero"&gt;<span class="colorw">Soltero</span>&lt;/label&gt;
+        &lt;/form&gt;
+                    </code></pre>
+                    <p class="colorw">Vista previa:</p>
+                    <pre><code>
+        <span class="colorw"><p>Seleccione su estado:</p><form>
+        <input type="radio" id="casado" name="estado" value="casado"><label for="casado">Casado</label><br>
+        <input type="radio" id="soltero" name="estado" value="soltero"><label for="soltero">Soltero</label></form></span>
+                    </code></pre>
+
+                    <h2 id="desordenada">checkbox</h2>
+                    <p class="colorw">Permite seleccionar una o varias opciones.</p>
+                    <pre><code>
+        &lt;form&gt;
+            &lt;input type="checkbox" id="pregunta" name="pregunta"&gt;
+            &lt;label for="pregunta"&gt;<span class="colorw">¿Es mayor de edad?:</span>&lt;/label&gt;
+        &lt;/form&gt;
+                    </code></pre>
+                    <p class="colorw">Vista previa:</p>
+                    <pre><code>
+        <span class="colorw"><form><input type="checkbox" id="pregunta" name="pregunta"><label for="pregunta">¿Es mayor de edad?:</label></form></span>
+                    </code></pre>
+
+                    <h2 id="desordenada">file</h2>
+                    <p class="colorw">Permite subir archivos desde el dispositivo.</p>
+                    <pre><code>
+        &lt;form&gt;
+            &lt;label for="documento"&gt;<span class="colorw">Suba su documento de identidad escaneado:</span>&lt;/label&gt;
+            &lt;input type="file" id="documento" name="documento"&gt;
+        &lt;/form&gt;
+                    </code></pre>
+                    <p class="colorw">Vista previa:</p>
+                    <pre><code>
+        <span class="colorw"><form><label for="documento">Suba su documento de identidad escaneado:</label>
+        <input type="file" id="documento" name="documento"></form></span>
+                    </code></pre>
+
+                    <h2 id="desordenada">submit</h2>
+                    <p class="colorw">Botón que envía el formulario.</p>
+                    <pre><code>
+        &lt;form&gt;
+            &lt;input type="submit" value="Enviar"&gt;
+        &lt;/form&gt;
+                    </code></pre>
+                    <p class="colorw">Vista previa:</p>
+                    <pre><code>
+        <span class="colorw"><form><input type="submit" value="Enviar"></form></span>
+                    </code></pre>
+                </div>
+                <h2 id="textarea">&lt;textarea&gt;</h2>
+                <p class="colorw">Campo para escribir texto largo (como comentarios o mensajes).</p>
+                <pre><code>
+        &lt;textarea name="mensaje" rows="10" cols="30"&gt;
+
+        &lt;/textarea&gt;
+                </code></pre>
+                
+                <h2 id="select">&lt;select&gt;</h2>
+                <p class="colorw">Crea una lista desplegable de opciones.</p>
+                <pre><code>
+        &lt;select id="idioma" name="idioma"&gt;
+
+        &lt;/select&gt;
+                </code></pre>
+
+                <h2 id="option">&lt;option&gt;</h2>
+                <p class="colorw">Define cada opción dentro de un &lt;select&gt;.</p>
+                <pre><code>
+        &lt;select id="idioma" name="idioma"&gt;
+            &lt;option value="español"&gt;<span class="colorw">Español</span>&lt;/option&gt;
+            &lt;option value="ingles"&gt;<span class="colorw">Inglés</span>&lt;/option&gt;
+            &lt;option value="frances"&gt;<span class="colorw">Francés</span>&lt;/option&gt;
+        &lt;/select&gt;
+                </code></pre>
+
+                <h2 id="button">&lt;button&gt;</h2>
+                <p class="colorw">Crea un botón que puede ejecutar acciones (enviar formulario, cancelar, etc.).</p>
+                <pre><code>
+        &lt;button type="button" onclick="alert('Felicidades!')"&gt;<span class="colorw">Clickea</span>&lt;/button&gt;
+                </code></pre>
+
+                <h2 id="fieldset">&lt;fieldset&gt;</h2>
+                <p class="colorw">Agrupa elementos relacionados dentro de un formulario.</p>
+                <pre><code>
+        &lt;fieldset&gt;
+        
+        &lt;/fieldset&gt;
+                </code></pre>
+
+                <h2 id="legend">&lt;legend&gt;</h2>
+                <p class="colorw">Título descriptivo para un &lt;fieldset&gt;.</p>
+                <pre><code>
+        &lt;fieldset&gt;
+            &lt;legend&gt;<span class="colorw">Información</span>&lt;/legend&gt;
+            &lt;label for="nombre"&gt;<span class="colorw">Nombre completo:</span>&lt;/label&gt;&lt;br&gt;
+            &lt;input type="text" id="nombre" name="nombre"&gt;&lt;br&gt;
+        &lt;/fieldset&gt;
+                </code></pre>
+
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
